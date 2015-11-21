@@ -1012,7 +1012,6 @@ public class Main extends JFrame implements ActionListener {
 		if (i != -1) {
 			String provider_id = (String) modelProvider.getValueAt(i, 1);
 			dao.deleteProvider(provider_id);
-			// tableProvider.setModel(setModelProvider(modelProvider, dao.));
 			searchProvider(textFieldProviderSearch.getText());
 		} else {
 			JOptionPane.showMessageDialog(new JDesktopPane(), "Vui lòng chọn nhà cung cấp", "Cảnh báo",
